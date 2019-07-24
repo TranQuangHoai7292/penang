@@ -1,13 +1,15 @@
 
 <?php $stt = 1; ?>
-@foreach ($users as $user)
+
 <tr>
     <td>{{$stt++}}</td>
     <td>
        {{$teams->name}}
     </td>
     <td>
+        @foreach ($users as $user)
         {{$user->name}} - {{$user->code}}
+        @endforeach
     </td>
 </tr>
-@endforeach
+
