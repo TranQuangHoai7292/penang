@@ -8,7 +8,7 @@
     </td>
     <td>
         @foreach ($users as $user)
-        {{$user->name}} - {{$user->code}}
+        {{$user->name}} - {{$user->code}}<br>
         @endforeach
     </td>
 </tr>
