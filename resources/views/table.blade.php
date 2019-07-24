@@ -1,16 +1,13 @@
 
 <?php $stt = 1; ?>
-@foreach ($teams as $team)
+@foreach ($users as $user)
 <tr>
     <td>{{$stt++}}</td>
-    <td>{{$team['name']}}</td>
     <td>
-        @foreach ($employes as $employe1)
-            @if ($team['id'] == $employe1['team_id'])
-                {{$employe1['name']}} - {{$employe1['code']}}<br>
-                @endif
-            @endforeach
-
+       {{$teams->name}}
+    </td>
+    <td>
+        {{$user->name}} - {{$user->code}}
     </td>
 </tr>
 @endforeach

@@ -142,7 +142,8 @@
 
                 }else{
                     url = '{{route('get.table')}}';
-                    $.post(url,{'_token':token},function(data){
+                    code = $.cookie('code');
+                    $.post(url,{'_token':token,'code':code},function(data){
                         $('.tbody').html(data);
                     });
                 }
