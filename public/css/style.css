@@ -1,0 +1,108 @@
+html, body {
+    background-color: #fff;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+.container {
+    padding: 50px;
+}
+.modal-header .close {
+    margin-top: -25px!important;
+}
+.modal-title {
+    font-weight: 900;
+    font-size: 19px;
+    font-family: 'Nunito', sans-serif;
+}
+p{
+    color: black;
+}
+.table>thead>tr>th{
+    width: 25%;
+}
+#footer-section {
+    background: url('../images/Footage-01.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.logo-footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.title-defail-h4:before {
+    content:'';
+    border-left: 3px solid #BBCA8F;
+    margin-right:5px;
+}
+.title-defail-h4 {
+    color: #BBCA8F;
+    font-size:16px;
+    margin-bottom:1em;
+}
+.title-defail-p {
+    font-size:11px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom:0;
+}
+.defail-des {
+    color:#fff;
+    font-size:11px;
+    margin-bottom:0;
+    line-height: 13px;
+}
+.fa-caret-right{
+    font-size:13px;
+    margin-right: 5px;
+    color: #C6AF5D;
+}
