@@ -104,7 +104,7 @@
         var code = '';
         var token = $('meta[name="csrf-token"]').attr('content');
         if ($.cookie('code') == undefined) {
-            var table = '<td colspan="3" style="text-align: center"><h4>Hãy bấm vào nút đăng ký xếp đội để biết mình ở đội nào nhé!!!</h4></td>';
+            var table = '<td colspan="3" style="text-align: center"><h4>Hãy bấm vào nút tìm đồng đội để biết đồng đội mình ở đâu nhé!!!</h4></td>';
             $('.tbody').html(table);
             $('#get-question').click(function () {
                 $('#exampleModal').modal('show');
