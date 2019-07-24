@@ -37,12 +37,12 @@
         </div>
     </div>
         <div class="news" style="width: 100%">
-            <img src="{{asset('images/image001.jpg')}}" style="width: 100%">
+            <img src="{{asset('images/penang1.jpg')}}" style="width: 100%">
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <h3 style="text-align: center;font-weight: 900;color: black"><strong>DANH SÁCH CÁC ĐỘI CÙNG THÀNH VIÊN</strong></h3>
+                    <h3 style="text-align: center;font-weight: 900;color: black"><strong>TRUY TÌM ĐỒNG ĐỘI</strong></h3>
                     <table class="table table-striped table-dark">
                         <thead>
                         <tr>
@@ -57,7 +57,7 @@
                     </table>
                 </div>
                 <div class="col-xl-12" style="text-align: center">
-                    <button type="submit" class="btn btn-primary" id="get-question">Đăng Ký Đội</button>
+                    <button type="submit" class="btn btn-primary" id="get-question">Tìm Đồng Đội</button>
                 </div>
             </div>
             <div class="row">
@@ -66,11 +66,14 @@
                 </div>
             </div>
         </div>
+    <div class="news" style="width: 100%">
+        <img src="{{asset('images/penang2.jpg')}}" style="width: 100%">
+    </div>
     @include('sweet::alert')
     <footer id="footer-section">
         <div class="container">
             <div class="row">
-                <div class="col-xm-12 col-sm-3">
+                <div class="col-xm-6 col-sm-3">
                     <div class="logo-footer">
                         <img src="{{asset('images/Footage-03.png')}}">
                     </div>
