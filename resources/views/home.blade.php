@@ -298,7 +298,7 @@
 
     <h1>Control Panel</h1>
 
-    <p>Danh Sách Đã Trả Lời</p>
+    <p>Danh Sách Chưa Trả Lời</p>
     <a href="{{route('fail')}}">Danh Sách Trả Lời Sai</a><br>
     <a href="{{route('logout')}}">Đăng Xuất</a>
 </div>

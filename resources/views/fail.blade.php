@@ -299,7 +299,7 @@
     <h1>Control Panel</h1>
 
     <p>Danh Sách Trả Lời Sai</p>
-    <a href="{{route('home')}}">Danh Sách Đã Trả Lời</a><br>
+    <a href="{{route('home')}}">Danh Sách Chưa Trả Lời</a><br>
     <a href="{{route('logout')}}">Đăng Xuất</a>
 
 </div>
