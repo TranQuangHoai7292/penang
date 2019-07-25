@@ -35,3 +35,9 @@ Route::post('/get-table',[
     'as'    =>  'get.table',
     'uses'  =>  'PublicController@getTable'
 ]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/fail', 'HomeController@fail')->name('fail');
+Route::get('/logout','HomeController@logout')->name('logout');
