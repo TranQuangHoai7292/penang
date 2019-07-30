@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $rows = Preson::where('status',0)->get()->toArray();
+        $rows = Preson::where('status',1)->orderBy('team_id','ASC')->get()->toArray();
         return view('home',compact('rows'));
     }
 

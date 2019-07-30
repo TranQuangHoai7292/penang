@@ -314,7 +314,7 @@
                 <th>STT</th>
                 <th>Họ Và tên</th>
                 <th>Mã Nhân Viên</th>
-                <th>Thời gian</th>
+                <th>Team</th>
             </tr>
             </thead>
             <tfoot>
@@ -350,7 +350,7 @@
                 <td>{{$stt++}}</td>
                 <td>{{$row['name']}}</td>
                 <td>{{$row['code']}}</td>
-                <td>{{$row['updated_at']}}</td>
+                <td>{{$row['team_id']}}</td>
             </tr>
 
             @endforeach
