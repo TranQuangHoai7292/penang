@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Input;
 use App\Team;
 use App\Preson;
 use App\Question;
-use Modules\Employe\Entities\Employe;
 
 class PublicController extends Controller
 {
@@ -31,47 +30,87 @@ class PublicController extends Controller
 
     public function getQuestion()
     {
+
+
         $data = Input::get();
-        $question = Question::all()->toArray();
         $code = $data['code'];
         $user = Preson::where('code',$data['code'])->first();
-        if ($user->question_id != null){
+        $question = Question::where('category_question',1)->get()->toArray();
+        $question1 = Question::where('category_question',2)->get()->toArray();
+        if ($user->question_id != null )
+        {
             $q_id = $user->question_id;
-            $q = Question::where('id',$q_id)->first();
+            $q_array = explode(';',$q_id);
+            $q = Question::whereIn('id',$q_array)->get()->toArray();
         }else{
-            $i = rand(0,200);
-            $q = $question[$i];
-            $user->question_id = $i;
+            $array = [];
+            $j = 1;
+            while ($j < 7 )
+            {
+                $i = rand(0,198);
+                if (in_array($question[$i]['id'], $array)) {
+
+                } else {
+                    array_push($array, $question[$i]['id']);
+                    $j++;
+                }
+
+            }
+            $k =1;
+            while($k < 5){
+                $o = rand(0,15);
+                if (in_array($question1[$o]['id'], $array)){
+
+                }else{
+                    array_push($array, $question1[$o]['id']);
+                    $k++;
+                }
+            }
+            $q = Question::whereIn('id',$array)->get()->toArray();
+            $user->question_id = implode(';',$array);
             $user->status = 0;
-            $user->fail = 0;
             $user->save();
         }
         return view('question',compact('q','code'));
     }
 
-    public function checkAnwer()
+
+    public function checkAnwer(Request $request)
     {
-        $data = Input::get();
-        $anwer = Question::where('id',$data['id_question'])->first();
-        $user = Preson::where('code',$data['code'])->first();
-        if ($data['anwer'] == $anwer->true_question){
-            $user->status = 1;
-            $user->save();
-            $success = array('success' => 'Chúc mừng bạn đã tra lời đúng. Hãy xem đồng đội bạn là những ai nào!!!');
-            return $success;
-        }else{
-            $question = Question::all()->toArray();
-            $i = rand(0,200);
-            $q = $question[$i];
-            $user->question_id = $i;
-            $user->status = 0;
-            $user->fail = $user->fail + 1;
-            $user->save();
-            $con = 3 - $user->fail;
-            $error = array('error'=>'Bạn đã trả lời sai bạn còn '.$con.' cơ hội!!','fail'=> $user->fail);
-            return $error;
+        $true = 0;
+        for ($i=1;$i<=10;$i++){
+            $q = Question::where('id',$request->question[$i])->first();
+            if ($q->true_question == $request->anwer[$i]){
+                $true++;
+            }
         }
+        $code = $request->code;
+        $user = Preson::where('code',$request->code)->first();
+        if ($user->status == 1){
+            return view ('thanks');
+        }else{
+            $user->status = 1;
+            $user->true = $true;
+            $user->save();
+            return view('true',compact('code'));
+        }
+
+
     }
+
+    public function thanks()
+    {
+        return view('thanks');
+    }
+
+    public function vote(Request $request)
+    {
+        $user = Preson::where('code',$request->code)->first();
+        $user->vote = $request->khaosat;
+        $user->save();
+        return view('thanks');
+    }
+
 
     public function getTable()
     {

@@ -30,8 +30,13 @@ class HomeController extends Controller
 
     public function fail()
     {
-        $rows = Preson::where('fail',3)->get()->toArray();
-        return view('fail',compact('rows'));
+        $rows = Preson::where('vote','<>',0)->get()->toArray();
+        return view('vote',compact('rows'));
+    }
+
+    public function join(){
+        $rows = Preson::where('status',0)->get()->toArray();
+        return view('join',compact('rows'));
     }
 
     public function logout()

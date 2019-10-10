@@ -30,14 +30,21 @@ Route::post('/check-anwer',[
     'as' =>  'check.anwer',
     'uses'   =>  'PublicController@checkAnwer'
 ]);
-
+Route::post('/vote',[
+    'as'    =>  'vote',
+    'uses'  =>  'PublicController@vote'
+]);
 Route::post('/get-table',[
     'as'    =>  'get.table',
     'uses'  =>  'PublicController@getTable'
 ]);
-
+Route::get('/thanks',[
+    'as'    =>  'thanks',
+    'uses'  =>  'PublicController@thanks'
+]);
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/fail', 'HomeController@fail')->name('fail');
 Route::get('/logout','HomeController@logout')->name('logout');
+Route::get('/join','HomeController@join')->name('join');

@@ -3,16 +3,14 @@ html, body {
     color: #000000;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
     font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
-
-.full-height {
-    height: 100vh;
-}
 
 .flex-center {
     align-items: center;
@@ -105,4 +103,15 @@ p{
     font-size:13px;
     margin-right: 5px;
     color: #C6AF5D;
+}
+.check-user {
+    margin:20px auto;
+    width: 20%;
+    display: block!important;
+}
+@media (max-width: 768px){
+    .logo-footer img{
+        width: 40%;
+        margin:auto;
+    }
 }

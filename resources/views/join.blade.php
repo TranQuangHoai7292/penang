@@ -298,10 +298,10 @@
 
     <h1>Control Panel</h1>
 
-    <p>Danh Sách Trả Lời Sai</p>
-    <a href="{{route('home')}}">Danh Sách Chưa Trả Lời</a><br>
-    <a href="{{route('logout')}}">Đăng Xuất</a>
-
+    <p>Danh Sách Chưa Tham Gia</p>
+    <a  style="color: #FFFFFF;" href="{{route('home')}}">Danh Sách Đã Trả Lời</a><br>
+    <a style="color: #FFFFFF;" href="{{route('fail')}}">Danh Sách Đã Vote</a><br>
+    <a style="color: #FFFFFF;" href="{{route('logout')}}">Đăng Xuất</a>
 </div>
 
 <div class="main">
@@ -315,7 +315,7 @@
                 <th>STT</th>
                 <th>Họ Và tên</th>
                 <th>Mã Nhân Viên</th>
-                <th>Thời gian</th>
+                <th>Trạng Thái</th>
             </tr>
             </thead>
             <tfoot>
@@ -330,9 +330,9 @@
 
                 <td><input type="text" placeholder="Tìm theo Sđt " /></td>
 
-{{--                <td><input type="text" placeholder="Tìm theo utm_source " /></td>--}}
+            {{--                <td><input type="text" placeholder="Tìm theo utm_source " /></td>--}}
 
-                <!-- <td><input type="text" placeholder="Tìm theo utm_medium" /></td>
+            <!-- <td><input type="text" placeholder="Tìm theo utm_medium" /></td>
 
                 <td><input type="text" placeholder="Tìm theo utm_campaign"></td> -->
 
@@ -347,12 +347,12 @@
             ?>
             @foreach($rows as $row)
 
-            <tr>
-                <td>{{$stt++}}</td>
-                <td>{{$row['name']}}</td>
-                <td>{{$row['code']}}</td>
-                <td>{{$row['updated_at']}}</td>
-            </tr>
+                <tr>
+                    <td>{{$stt++}}</td>
+                    <td>{{$row['name']}}</td>
+                    <td>{{$row['code']}}</td>
+                    <td>Chưa Tham Gia</td>
+                </tr>
 
             @endforeach
 

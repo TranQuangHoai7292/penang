@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
 
-    <title>Danh Sách Chưa Xếp Đội</title>
+    <title>Danh Sách Trả Lời Sai</title>
 
     <!-- add the jQuery script -->
 
@@ -298,10 +298,11 @@
 
     <h1>Control Panel</h1>
 
-    <p>Danh Sách Đã Trả Lời</p>
-    <a style="color: #FFFFFF;" href="{{route('fail')}}">Danh Sách Đã Vote</a><br>
+    <p>Danh Sách Đã Vote</p>
+    <a style="color: #FFFFFF;" href="{{route('home')}}">Danh Sách Đã Trả Lời</a><br>
     <a style="color: #FFFFFF;" href="{{route('join')}}">Danh Sách Chưa Tham Gia</a><br>
     <a style="color: #FFFFFF;" href="{{route('logout')}}">Đăng Xuất</a>
+
 </div>
 
 <div class="main">
@@ -315,7 +316,7 @@
                 <th>STT</th>
                 <th>Họ Và tên</th>
                 <th>Mã Nhân Viên</th>
-                <th>Số Câu Đúng</th>
+                <th>Lựa Chọn</th>
             </tr>
             </thead>
             <tfoot>
@@ -351,7 +352,13 @@
                 <td>{{$stt++}}</td>
                 <td>{{$row['name']}}</td>
                 <td>{{$row['code']}}</td>
-                <td>{{$row['true']}}/10</td>
+                <td>
+                    @if ($row['vote'] == 1)
+                        Tổ Chức Team Building 2 ngày 1 đêm
+                        @else
+                        Tổ Chức Team Building 1 ngày
+                    @endif
+                </td>
             </tr>
 
             @endforeach
