@@ -17,7 +17,19 @@ h1, h2, h3, h4, h5,
     display: flex;
     justify-content: center;
 }
-
+.logo-top{
+    padding:0!important;
+}
+.logo-top .row img {
+    display: block;
+    width: 15%;
+    margin:auto;
+}
+.header {
+    background: #E82429;
+    width: 100% !important;
+    padding:20px;
+}
 .position-ref {
     position: relative;
 }

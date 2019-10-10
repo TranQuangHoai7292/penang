@@ -36,6 +36,18 @@
         </div>
     </div>
 </div>
+<div class="container logo-top">
+    <div class="row">
+        <div class="col-12">
+            <img src="{{asset('images/logoTNR-01.png')}}">
+        </div>
+    </div>
+</div>
+<div class="container header">
+    <div class="row">
+        <div class="col-12"></div>
+    </div>
+</div>
 @yield('content')
 @include('sweet::alert')
 <footer id="footer-section">
