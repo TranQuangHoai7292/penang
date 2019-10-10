@@ -80,8 +80,7 @@ class PublicController extends Controller
         $true = 0;
         $array = [];
         for ($i=1;$i<=10;$i++){
-            if (isset($request->anwer[$i])){
-
+            if (empty($request->anwer[$i])){
                 return redirect()->back()->with('errors','Bạn Chưa Trả Lời Hết Câu Hỏi!!!');
             }else{
                 $q = Question::where('id',$request->question[$i])->first();
