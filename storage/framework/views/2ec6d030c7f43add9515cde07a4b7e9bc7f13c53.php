@@ -1,12 +1,12 @@
-@extends('layouts.master')
-@section('content')
+<?php $__env->startSection('content'); ?>
         <div class="container" style="min-height: 70%;display: block">
             <div class="row">
-                @if (session('errors'))
+                <?php if(session('errors')): ?>
                 <div class="alert alert-danger" role="alert">
-                    {{ session('errors') }}
+                    <?php echo e(session('errors')); ?>
+
                 </div>
-                @endif
+                <?php endif; ?>
                 <div class="col-xl-12">
                     <h3 style="text-align: center;font-weight: 900;color: black"><strong>Kiểm Tra Văn Hóa Giai Đoạn 3 và Khảo Sát Team Building 2019</strong></h3>
                 </div>
@@ -29,7 +29,7 @@
                     $('#exampleModal').modal('show');
                 });
                 $('#check-user').click(function(){
-                    var url = '{{route('check.user')}}' ;
+                    var url = '<?php echo e(route('check.user')); ?>' ;
                     code =   $('#code').val();
                     $.post(url,{'code':code,'_token':token},function(data){
                         if (data){
@@ -47,7 +47,7 @@
                 });
             }else{
                 $(document).ready(function(){
-                    var link = '{{route('check.user')}}' ;
+                    var link = '<?php echo e(route('check.user')); ?>' ;
                     code = $.cookie('code');
                     $.post(link,{'code':code,'_token':token},function(data){
                         $.cookie('true',data.status,{expires:1,path:'/'});
@@ -58,7 +58,7 @@
                     }
                     else{
                         code = $.cookie('code');
-                        var url = '{{route('get.question')}}';
+                        var url = '<?php echo e(route('get.question')); ?>';
                         $.post(url, {'code': code, '_token': token}, function (data) {
                             $('#question').html(data);
                         });
@@ -67,5 +67,7 @@
                 });
             }
         </script>
-    @endsection
+    <?php $__env->stopSection(); ?>
 
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp7\htdocs\penang\resources\views/welcome.blade.php ENDPATH**/ ?>

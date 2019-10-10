@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-    <meta name="csrf-token" content="{{csrf_token()}}">
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     <title>TEAM BUILDING TNR 2019</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="shortcut icon" href="{{asset('images/favicon.png')}}">
-    <link href="{{asset('css/style.css')}}" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="<?php echo e(asset('images/favicon.png')); ?>">
+    <link href="<?php echo e(asset('css/style.css')); ?>" type="text/css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Styles -->
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="{{asset('js/jquery.cookie.min.js')}}"></script>
+    <script src="<?php echo e(asset('js/jquery.cookie.min.js')); ?>"></script>
 </head>
 <body>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -40,7 +40,7 @@
 <div class="container logo-top">
     <div class="row">
         <div class="col-12">
-            <img src="{{asset('images/logoTNR-01.png')}}">
+            <img src="<?php echo e(asset('images/logoTNR-01.png')); ?>">
         </div>
     </div>
 </div>
@@ -49,14 +49,14 @@
         <div class="col-12"></div>
     </div>
 </div>
-@yield('content')
-@include('sweet::alert')
+<?php echo $__env->yieldContent('content'); ?>
+<?php echo $__env->make('sweet::alert', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <footer id="footer-section">
     <div class="container">
         <div class="row">
             <div class="col-xm-6 col-sm-3">
                 <div class="logo-footer">
-                    <img src="{{asset('images/Footage-03.png')}}">
+                    <img src="<?php echo e(asset('images/Footage-03.png')); ?>">
                 </div>
             </div>
             <div class="col-xm-12 col-sm-5">
@@ -84,3 +84,4 @@
 
 </body>
 </html>
+<?php /**PATH C:\xampp7\htdocs\penang\resources\views/layouts/master.blade.php ENDPATH**/ ?>

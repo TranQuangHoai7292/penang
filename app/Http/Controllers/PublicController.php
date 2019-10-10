@@ -7,7 +7,8 @@ use Illuminate\Support\Facades\Input;
 use App\Team;
 use App\Preson;
 use App\Question;
-
+use Alert;
+use Session;
 class PublicController extends Controller
 {
 
@@ -27,7 +28,6 @@ class PublicController extends Controller
         }
 
     }
-
     public function getQuestion()
     {
 
@@ -78,21 +78,31 @@ class PublicController extends Controller
     public function checkAnwer(Request $request)
     {
         $true = 0;
+        $array = [];
         for ($i=1;$i<=10;$i++){
-            $q = Question::where('id',$request->question[$i])->first();
-            if ($q->true_question == $request->anwer[$i]){
-                $true++;
+            if (isset($request->anwer[$i])){
+
+                return redirect()->back()->with('errors','Bạn Chưa Trả Lời Hết Câu Hỏi!!!');
+            }else{
+                $q = Question::where('id',$request->question[$i])->first();
+                if ($q->true_question == $request->anwer[$i]){
+                    $true++;
+                }else{
+                    array_push($array,$q->id);
+                }
             }
+
         }
         $code = $request->code;
         $user = Preson::where('code',$request->code)->first();
+        $fail = Question::whereIn('id',$array)->get()->toArray();
         if ($user->status == 1){
             return view ('thanks');
         }else{
             $user->status = 1;
             $user->true = $true;
             $user->save();
-            return view('true',compact('code'));
+            return view('true',compact('code','true','fail'));
         }
 
 
