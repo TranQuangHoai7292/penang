@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5,
 .header {
     background: #E82429;
     width: 100% !important;
-    padding:20px;
+    padding:20px!important;
 }
 .position-ref {
     position: relative;
@@ -125,5 +125,13 @@ p{
     .logo-footer img{
         width: 40%;
         margin:auto;
+    }
+    .logo-top .row img{
+        width: 30%;
+    }
+}
+@media (max-width: 495px){
+    .logo-top .row img{
+        width: 35%;
     }
 }
