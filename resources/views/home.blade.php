@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
 
-    <title>Danh Sách Chưa Xếp Đội</title>
+    <title>Danh Sách Tham Gia Chương Trình</title>
 
     <!-- add the jQuery script -->
 
