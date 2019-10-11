@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2019-10-11 16:45:08
+Date: 2019-10-11 17:10:47
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -106,23 +106,23 @@ INSERT INTO `presons` VALUES ('31', 'TNG01261', 'Nguyễn Đặng Ngọc Duy', n
 INSERT INTO `presons` VALUES ('32', 'TNG01075', 'Lê Thùy Ngọc Khanh', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('33', 'TNG01076', 'Trần Thị Thu Hạnh', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('34', 'TNG01308', 'Hồ Hồng Ngọc', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
-INSERT INTO `presons` VALUES ('35', 'TNR00207', 'Lê Thị Nga', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-11 08:19:33');
+INSERT INTO `presons` VALUES ('35', 'TNR00207', 'Lê Thị Nga', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-11 09:48:28');
 INSERT INTO `presons` VALUES ('36', 'TNR00495', 'Huỳnh Phương Thảo', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('37', 'TNR00054', 'Đỗ Mạnh Dũng', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-11 08:51:51');
 INSERT INTO `presons` VALUES ('38', 'TNR00034', 'Nguyễn Thị Yến Ngọc', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('39', 'TNR00336', 'Phạm Thị Thu', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
-INSERT INTO `presons` VALUES ('40', 'TNR00153', 'Phạm Thùy Linh', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
+INSERT INTO `presons` VALUES ('40', 'TNR00153', 'Phạm Thùy Linh', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-11 10:10:04');
 INSERT INTO `presons` VALUES ('41', 'TNR00405', 'Lê Trang Mỹ', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('42', 'TNR00056', 'Trương Long Hải', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('43', 'TNR00445', 'Trần Thị Thúy Hằng', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('44', 'TNR00047', 'Lê Thu Thủy', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('45', 'TNR00079', 'Lê Xuân Trường', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
-INSERT INTO `presons` VALUES ('46', 'TNR00312', 'Đào Thị Kim Nhung', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
+INSERT INTO `presons` VALUES ('46', 'TNR00312', 'Đào Thị Kim Nhung', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-11 09:56:47');
 INSERT INTO `presons` VALUES ('47', 'TNR00218', 'Nguyễn Tiến Nam', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
-INSERT INTO `presons` VALUES ('48', 'TNR00277', 'Phùng Thị Xuân Tuyết', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
+INSERT INTO `presons` VALUES ('48', 'TNR00277', 'Phùng Thị Xuân Tuyết', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-11 10:01:30');
 INSERT INTO `presons` VALUES ('49', 'TNR00080', 'Nguyễn Thị Mỹ', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('50', 'TNR00426', 'Lê Thị Phương Thúy', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
-INSERT INTO `presons` VALUES ('51', 'TNR00416', 'Trần Thanh Tú', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
+INSERT INTO `presons` VALUES ('51', 'TNR00416', 'Trần Thanh Tú', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-11 09:58:27');
 INSERT INTO `presons` VALUES ('52', 'TNR00419', 'Vũ Huy Hoàng', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('53', 'TNR00407', 'Tống Thị Anh Khiêm', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('54', 'TNR00429', 'Lê Đức Anh', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
@@ -131,17 +131,17 @@ INSERT INTO `presons` VALUES ('56', 'TNR00461', 'Ngô Văn Tam', null, null, '0'
 INSERT INTO `presons` VALUES ('57', 'TNR00475', 'Lê Thị Thu Hiền', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('58', 'TNR00477', 'Nông Thị Mơ', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('59', 'TNR00481', 'Mã Thị Yến Chi', null, null, '0', '0', '0', '1', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
-INSERT INTO `presons` VALUES ('60', 'TNR00061', 'Lê Nguyễn Quỳnh Anh', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
+INSERT INTO `presons` VALUES ('60', 'TNR00061', 'Lê Nguyễn Quỳnh Anh', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-11 09:57:30');
 INSERT INTO `presons` VALUES ('61', 'TNR00108', 'Nguyễn Thị Hương', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('62', 'TNR00128', 'Mai Thị Ngọc Ngân', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('63', 'TNR00175', 'Nguyễn Thị Cẩm Loan', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('64', 'TNR00465', 'Nguyễn Đăng Phương', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
-INSERT INTO `presons` VALUES ('65', 'TNR00069', 'Nguyễn Xuân Hoàng', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
+INSERT INTO `presons` VALUES ('65', 'TNR00069', 'Nguyễn Xuân Hoàng', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-11 10:07:38');
 INSERT INTO `presons` VALUES ('66', 'TNR00399', 'Bùi Huỳnh Dương', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('67', 'TNR00440', 'Hà Trung Kiên', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('68', 'TNG01058', 'Ký Đỉnh Quyền', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
 INSERT INTO `presons` VALUES ('69', 'TNG01059', 'Võ Hà Ngọc Bảo', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
-INSERT INTO `presons` VALUES ('70', 'TNR00493', 'Nguyễn Thị Ngọc Thanh', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-10 13:49:34');
+INSERT INTO `presons` VALUES ('70', 'TNR00493', 'Nguyễn Thị Ngọc Thanh', null, null, '0', '0', '0', '2', '2019-10-10 13:49:34', '2019-10-11 09:52:00');
 
 -- ----------------------------
 -- Table structure for questions

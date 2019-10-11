@@ -95,8 +95,12 @@ class PublicController extends Controller
         $code = $request->code;
         $user = Preson::where('code',$request->code)->first();
         $fail = Question::whereIn('id',$array)->get()->toArray();
-        if ($user->status == 1){
-            return view ('thanks');
+        if ($user->status == 1 && $user->role == 1 && $user->vote == 0){
+            return view ('vote2');
+        }elseif($user->status == 1 && $user->role == 1 && $user->vote == 1){
+            return view('thanks');
+        }elseif($user->status == 1 && $user->role == 2 && $user->vote == 0){
+            return view('thanks');
         }else{
             $role = $user->role;
             $user->status = 1;

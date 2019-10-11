@@ -38,6 +38,8 @@
                             $.cookie('true',data.status,{expires:1,path:'/'});
                             $.cookie('fail',data.fail,{expires:1,path:'/'});
                             $.cookie('vote',data.vote,{expires:1,path:'/'});
+                            $.cookie('role',data.role,{expires:1,path:'/'});
+                            alert($.cookie('role'));
                             setTimeout(function(){
                                 window.location.reload();
                             },1500);
@@ -53,12 +55,15 @@
                     $.post(link,{'code':code,'_token':token},function(data){
                         $.cookie('true',data.status,{expires:1,path:'/'});
                     });
-                    if ($.cookie('true') != 0 && $.cookie('vote') != 0) {
+                    if ($.cookie('true') != 0 && $.cookie('role') == 2){
+                        window.location = '{{route('thanks')}}';
+                    }
+                    else if ($.cookie('true') != 0 && $.cookie('vote') != 0) {
 
                         var contact = '<p style="text-align: center;font-weight: 900;color:black">Bạn đã tham gia chương trình này rồi</p>';
                         $('#question').html(contact);
                     }
-                    else if ($.cookie('true') != 0 && $.cookie('vote') == 0 ) {
+                    else if ($.cookie('true') != 0 && $.cookie('vote') == 0 && $.cookie('role') == 1) {
                         var check = '{{route('vote2')}}';
 
                         window.location = check;
@@ -69,7 +74,6 @@
                         $.post(url, {'code': code, '_token': token}, function (data) {
                             $('#question').html(data);
                         });
-
                     }
                     $('#get-question').hide();
                 });
