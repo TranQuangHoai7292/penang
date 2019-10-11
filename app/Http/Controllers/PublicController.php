@@ -127,6 +127,15 @@ class PublicController extends Controller
 
     }
 
+    public function overTime(){
+        $data = Input::get();
+        $user = Preson::where('code',$data['code'])->first();
+        $user->status = 1;
+        $user->save();
+
+        return $status = 1;
+    }
+
 
     public function getTable()
     {

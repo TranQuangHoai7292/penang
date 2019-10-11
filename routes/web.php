@@ -43,6 +43,10 @@ Route::get('/thanks',[
     'uses'  =>  'PublicController@thanks'
 ]);
 Route::get('/re-vote','PublicController@vote2')->name('vote2');
+Route::post('/overtime',[
+    'as'    =>  'overtime',
+    'uses'  =>  'PublicController@overTime'
+]);
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
