@@ -98,10 +98,11 @@ class PublicController extends Controller
         if ($user->status == 1){
             return view ('thanks');
         }else{
+            $role = $user->role;
             $user->status = 1;
             $user->true = $true;
             $user->save();
-            return view('true',compact('code','true','fail'));
+            return view('true',compact('code','true','fail','role'));
         }
 
 

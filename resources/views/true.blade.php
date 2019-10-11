@@ -46,6 +46,8 @@
         @endforeach
     </div>
     @endif
+    @if ($role == 2)
+        @else
     <div class="container" style="min-height: 30%;display: block">
         <div class="row">
             <div class="col-xl-12">
@@ -81,5 +83,6 @@
             </div>
         </div>
     </div>
+    @endif
     @endsection
 
