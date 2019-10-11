@@ -30,8 +30,8 @@ class PublicController extends Controller
     }
     public function getQuestion()
     {
-
-
+        $starline = strtotime('2019-11-10 16:04:00');
+        $now = strtotime(date('Y-m-d h:i:s'));
         $data = Input::get();
         $code = $data['code'];
         $user = Preson::where('code',$data['code'])->first();
@@ -71,7 +71,7 @@ class PublicController extends Controller
             $user->status = 0;
             $user->save();
         }
-        return view('question',compact('q','code'));
+        return view('question',compact('q','code','now','starline'));
     }
 
 
