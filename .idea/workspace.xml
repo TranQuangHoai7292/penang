@@ -133,12 +133,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp7\htdocs\penang\resources\views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\github\penang\resources\views" />
       <recent name="C:\xampp\htdocs\penang\resources\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp7\htdocs\penang\resources\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -177,7 +177,8 @@
       <workItem from="1564110323620" duration="9000" />
       <workItem from="1564451767085" duration="174000" />
       <workItem from="1570602852663" duration="12841000" />
-      <workItem from="1570670349899" duration="24840000" />
+      <workItem from="1570670349899" duration="24958000" />
+      <workItem from="1570758853138" duration="3950000" />
     </task>
     <servers />
   </component>

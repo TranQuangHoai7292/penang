@@ -15,6 +15,7 @@
     <!-- Styles -->
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="{{asset('js/jquery.cookie.min.js')}}"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
 </head>
 <body>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

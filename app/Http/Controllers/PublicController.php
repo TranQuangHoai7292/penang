@@ -106,7 +106,9 @@ class PublicController extends Controller
 
 
     }
-
+    public function vote2(){
+        return view('vote2');
+    }
     public function thanks()
     {
         return view('thanks');
@@ -114,10 +116,15 @@ class PublicController extends Controller
 
     public function vote(Request $request)
     {
-        $user = Preson::where('code',$request->code)->first();
-        $user->vote = $request->khaosat;
-        $user->save();
-        return view('thanks');
+        if ($request->khaosat != null){
+            $user = Preson::where('code',$request->code)->first();
+            $user->vote = $request->khaosat;
+            $user->save();
+            return view('thanks');
+        }else{
+            return view('vote2')->with('error','Bạn Chưa Lựa Chọn CHo Team Buildings. Mời Bạn Lựa Chọn Lại!!!');
+        }
+
     }
 
 
