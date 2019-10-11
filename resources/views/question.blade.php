@@ -3,7 +3,7 @@
         Xin lỗi vì sự bất tiện này!!!. Chương trình vẫn chưa bắt đầu, mời bạn quay lại trong:<br><br>
         <span id="timer" style="color:red;font-size: 20px;font-weight: 900"></span>
     </h5>
-    <form action="{{route('check.anwer')}}" method="POST" id="question" >
+    <form action="{{route('check.anwer')}}" method="POST" id="question" class="block none">
         @csrf
         <?php $stt =1 ; ?>
         @foreach ($q as $foryou)
