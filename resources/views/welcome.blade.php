@@ -39,7 +39,6 @@
                             $.cookie('fail',data.fail,{expires:1,path:'/'});
                             $.cookie('vote',data.vote,{expires:1,path:'/'});
                             $.cookie('role',data.role,{expires:1,path:'/'});
-                            alert($.cookie('role'));
                             setTimeout(function(){
                                 window.location.reload();
                             },1500);
