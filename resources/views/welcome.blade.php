@@ -68,7 +68,7 @@
                         window.location = check;
                     }
                     else{
-                        var starline2 = new Date ("October 14, 2019 10:30:00");
+                        var starline2 = new Date ("October 15, 2019 12:00:00");
                         var now2 = new Date();
                         if (now2 > starline2){
                             var question = '<p style="text-align: center">Thời gian làm bài kiểm tra đã kết thúc mời bạn tham gia Khảo Sát Team Building 2019 sau 5 giây.</p>';
