@@ -135,6 +135,9 @@ p{
     .logo-top .row img{
         width: 35%;
     }
+    #question,#khaosat {
+        padding: 0 5px;
+    }
 }
 .none {
     display: none;

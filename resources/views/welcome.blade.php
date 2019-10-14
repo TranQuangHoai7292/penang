@@ -73,9 +73,8 @@
                         if (now2 > starline2){
                             var question = '<p style="text-align: center">Thời gian làm bài kiểm tra đã kết thúc mời bạn tham gia Khảo Sát Team Building 2019 sau 5 giây.</p>';
                             $('#question').html(question);
-                            var url = '{{route('overtime')}}';
+                             url = '{{route('overtime')}}';
                             var code = $.cookie('code');
-                            var token = $('meta[name="csrf-token"]').attr('content');
                             $.post(url,{'code':code,'_token':token},function(data){
                                 if (data == 1){
                                     setTimeout(function(){
