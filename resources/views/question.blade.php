@@ -49,8 +49,7 @@
 
         ?>
     </form>
-    <script>
-        $(document).ready(function(){
+    <script type="text/javascript">
             var starline = new Date ("October 15, 2019 11:45:00");
             var now = new Date();
             var timeup = starline.setSeconds(starline.getSeconds());
@@ -98,6 +97,5 @@
                 document.getElementById("timer").innerHTML = hours + " GIỜ " + minutes + " PHÚT " + seconds + " GIÂY";
             }
 
-        });
     </script>
 
