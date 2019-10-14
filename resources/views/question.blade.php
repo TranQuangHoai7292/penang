@@ -78,7 +78,7 @@
                             var token = $('meta[name="csrf-token"]').attr('content');
                             $.post(url,{'code':code,'_token':token},function(data){
                                 if (data == 1){
-                                    window.location = '{{route('index')}}'
+                                    window.location = '{{route('vote2')}}'
                                 }
                             });
                             clearInterval(counter1);
@@ -97,6 +97,7 @@
                 var minutes = Math.floor((count / 60) % 60);
                 document.getElementById("timer").innerHTML = hours + " GIỜ " + minutes + " PHÚT " + seconds + " GIÂY";
             }
+
         });
     </script>
 
