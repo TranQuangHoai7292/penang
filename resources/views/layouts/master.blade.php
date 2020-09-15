@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <meta name="csrf-token" content="{{csrf_token()}}">
-    <title>TEAM BUILDING TNR 2019</title>
+    <title>TEAM BUILDING TNR 2020</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="shortcut icon" href="{{asset('images/favicon.png')}}">
     <link href="{{asset('css/style.css')}}" type="text/css" rel="stylesheet">
@@ -22,7 +22,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header" style="text-align: center">
-                <h5 class="modal-title" id="exampleModalLabel">Nhập Chính Xác Mã Nhân Viên Để Tiến Hành Khảo Sát</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Nhập Chính Xác Họ Và Tên Để Tiến Hành Bình Chọn</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -30,7 +30,7 @@
             <div class="modal-body">
                 <div>
                     <div class="form-group">
-                        <input type="text" class="form-control"  placeholder="Mã Nhân Viên" id="code">
+                        <input type="text" class="form-control"  placeholder="Họ và Tên" id="code">
                     </div>
                     <button type="submit" class="btn btn-primary check-user" id="check-user">Gửi</button>
                 </div>

@@ -3,7 +3,7 @@
 <div class="container" style="min-height: 30%;display: block">
     <div class="row">
         <div class="col-xl-12">
-            <h3 style="text-align: center;font-weight: 900;color: black"><strong>Khảo Sát Team Building 2019</strong></h3>
+            <h3 style="text-align: center;font-weight: 900;color: black"><strong>VOTE ĐỊA ĐIỂM KHÁCH SẠN - RESORT TẠI ĐÀ LẠT</strong></h3>
         </div>
     </div>
     <div class="row">
@@ -17,13 +17,13 @@
                         @csrf
                         <input type="hidden" name="code" value="" >
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <input type="radio" name="khaosat" value="1">
-                                Tổ chức Team Building 2 ngày 1 đêm
+                                Ở khách sạn trung tâm Đà Lạt, không có chương trình tập thể vào tối đầu tiên
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <input type="radio" name="khaosat" value="2">
-                                Tổ chức Team Building 1 ngày
+                                Ở Villa xa trung tâm, di chuyển hết 30 phút, không khí trong lành và cảnh đẹp. Dự kiến tổ chức chương trình lửa trại vào tối đầu tiên.
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function(){
-        $('input[name=code]').attr('value',$.cookie('code'));
+        $('input[name=code]').attr('value',$.cookie('name'));
     })
 </script>
     @endsection

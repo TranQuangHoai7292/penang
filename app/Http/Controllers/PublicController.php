@@ -17,7 +17,7 @@ class PublicController extends Controller
     public function checkUser()
     {
         $data = Input::get();
-        $user = Preson::where('code',$data['code'])->first();
+        $user = Preson::where('name',$data['name'])->first();
         if ($user == null){
             return $user;
         }else{
@@ -118,8 +118,9 @@ class PublicController extends Controller
     public function vote(Request $request)
     {
         if ($request->khaosat != null){
-            $user = Preson::where('code',$request->code)->first();
+            $user = Preson::where('name',$request->code)->first();
             $user->vote = $request->khaosat;
+            $user->role = 2;
             $user->save();
             return view('thanks');
         }else{

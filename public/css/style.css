@@ -122,6 +122,11 @@ p{
     width: 20%;
     display: block!important;
 }
+#khaosat form {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
 @media (max-width: 768px){
     .logo-footer img{
         width: 40%;

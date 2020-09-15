@@ -314,8 +314,8 @@
             <tr class="heading">
                 <th>STT</th>
                 <th>Họ Và tên</th>
-                <th>Mã Nhân Viên</th>
-                <th>Số Câu Đúng</th>
+                <th>Vote</th>
+                <th>Thời gian</th>
             </tr>
             </thead>
             <tfoot>
@@ -350,8 +350,8 @@
             <tr>
                 <td>{{$stt++}}</td>
                 <td>{{$row['name']}}</td>
-                <td>{{$row['code']}}</td>
-                <td>{{$row['true']}}/10</td>
+                <td>{{$row['vote']}}</td>
+                <td>{{$row['updated_at']}}</td>
             </tr>
 
             @endforeach
