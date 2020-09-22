@@ -9,7 +9,10 @@
             </div>
         </div>
         <h5 style="color:black;font-weight: 700;text-align: center;margin-bottom: 20px">
-            Cảm ơn bạn đã tiến hành kiểm tra văn hóa giai đoạn 3 kết quả của bạn là đã trả lời được <span style="color:red">{{10 - count($fail)}}/10 câu hỏi</span>. Đây là các câu hỏi bạn đã trả lời sai và đáp án của câu hỏi:
+            Cảm ơn bạn đã tiến hành kiểm tra văn hóa giai đoạn 3 kết quả của bạn là đã trả lời được <span style="color:red">{{5 - count($fail)}}/5 câu hỏi</span>.
+            @if (sizeof($fail) > 0)
+            Đây là các câu hỏi bạn đã trả lời sai và đáp án của câu hỏi:
+                @endif
         </h5>
         @foreach ($fail as $fai)
         <p style="color: black!important;margin-top:2em;font-weight: 700">{{$fai['id']}}. {{$fai['question']}}</p>
@@ -46,43 +49,37 @@
         @endforeach
     </div>
     @endif
-    @if ($role == 2)
-        @else
-    <div class="container" style="min-height: 30%;display: block">
+    <div class="container" style="padding-top: 0;">
         <div class="row">
-            <div class="col-xl-12">
-                <h3 style="text-align: center;font-weight: 900;color: black"><strong>Khảo Sát Team Building 2019</strong></h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-12 " id="khaosat">
-                <h5 style="color:black;font-weight: 700;text-align: center;margin-bottom: 20px">
-                    Sau đây là Khảo Sát cho Team Building 2019 sẽ dự kiến sẽ diễn ra vào tháng 11 của TNR Holdings Việt Nam.Bạn vui lòng chọn 1 trong 2 lựa chọn dưới đây:
-                </h5>
-                <form action="{{route('vote')}}" method="POST" id="vote">
+            <div class="col-12" style="text-align: center">
+                <form id="chiateam">
                     <div class="row">
                         <div class="col-sm-12">
-                            @csrf
-                            <input type="hidden" name="code" value="{{$code}}" >
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <input type="radio" name="khaosat" value="1">
-                                    Tổ chức Team Building 2 ngày 1 đêm
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="radio" name="khaosat" value="2">
-                                    Tổ chức Team Building 1 ngày
-                                </div>
-                            </div>
+                            <input type="hidden" name="name" value="" >
                         </div>
                         <div class="col-sm-12 t-a">
-                            <input type="submit" class="btn btn-primary check-user" value="Gửi" id="question-value">
+                            <input type="button" class="btn btn-primary chia-team" value="Bấm Chia Team" id="question-value">
                         </div>
                     </div>
                 </form>
             </div>
+            <div class="col-12">
+                <div class="team">
+
+                </div>
+            </div>
         </div>
     </div>
-    @endif
+    <script>
+        var name = $.cookie('name');
+        var url = "{{route('teams')}}";
+        var token = "{{csrf_token()}}";
+        $('.chia-team').on('click',function(){
+            $('input[name=name]').attr('value',$.cookie('name'));
+            $.post(url,{'name':name,'_token':token},function(data){
+                $('.team').html(data);
+            })
+        });
+    </script>
     @endsection
 

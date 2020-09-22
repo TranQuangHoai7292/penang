@@ -314,7 +314,7 @@
             <tr class="heading">
                 <th>STT</th>
                 <th>Họ Và tên</th>
-                <th>Vote</th>
+                <th>Team</th>
                 <th>Thời gian</th>
             </tr>
             </thead>
@@ -350,7 +350,9 @@
             <tr>
                 <td>{{$stt++}}</td>
                 <td>{{$row['name']}}</td>
-                <td>{{$row['vote']}}</td>
+                <td>
+                    {{$row['team_id']}}
+                </td>
                 <td>{{$row['updated_at']}}</td>
             </tr>
 

@@ -42,6 +42,15 @@ Route::get('/thanks',[
     'as'    =>  'thanks',
     'uses'  =>  'PublicController@thanks'
 ]);
+Route::get('/re-vote',[
+    'as'    =>  'vote2',
+    'uses'  =>  'PublicController@vote2'
+]);
+Route::post('/team',[
+   'as' =>  'teams',
+   'uses'   =>  'PublicController@team'
+]);
+
 Route::get('/re-vote','PublicController@vote2')->name('vote2');
 Route::post('/overtime',[
     'as'    =>  'overtime',

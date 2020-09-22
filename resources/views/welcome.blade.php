@@ -8,14 +8,19 @@
                 </div>
                 @endif
                 <div class="col-xl-12">
-                    <h3 style="text-align: center;font-weight: 900;color: black"><strong>VOTE ĐỊA ĐIỂM KHÁCH SẠN - RESORT TẠI ĐÀ LẠT</strong></h3>
+                    <h3 style="text-align: center;font-weight: 900;color: black">
+                        <strong class="vote">TEAM BUILDING ĐÀ LẠT 2020</strong>
+                    </h3>
                 </div>
                 <div class="col-xl-12" style="text-align: center">
-                    <button type="submit" class="btn btn-primary" id="get-question">BẮT ĐẦU VOTE</button>
+                    <button type="submit" class="btn btn-primary" id="get-question">BẮT ĐẦU CHIA TEAM</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-12 " id="question">
+                </div>
+                <div class="col-xl-12">
+                    <div class="team"></div>
                 </div>
             </div>
         </div>
@@ -32,7 +37,12 @@
                     $.post(url,{'name':name,'_token':token},function(data){
                         if (data){
                             swal('Chào Mừng Bạn ' + data.name,'','success');
+                            $.cookie('true',data.status,{expires:1,path:'/'});
+                            $.cookie('fail',data.fail,{expires:1,path:'/'});
+                            $.cookie('vote',data.vote,{expires:1,path:'/'});
+                            $.cookie('role',data.role,{expires:1,path:'/'});
                             $.cookie('name',data.name,{expires:1,path:'/'});
+                            $.cookie('team',data.team_id,{expires:1,path:'/'});
                             setTimeout(function(){
                                 window.location.reload();
                             },1500);
@@ -42,21 +52,47 @@
                     });
                 });
             }else{
-                $(document).ready(function(){
-                    var link = '{{route('check.user')}}' ;
+                $(document).ready(function() {
+                    var link = '{{route('check.user')}}';
                     name = $.cookie('name');
-                    $.post(link,{'name':name,'_token':token},function(data){
-                        console.log(data);
-                        if (data.vote != 0 && data.role == 2){
-                            var contact = '<p style="text-align: center;font-weight: 900;color:black">Bạn đã tham gia chương trình này rồi</p>';
-                            $('#question').html(contact);
+                    var token = $('meta[name="csrf-token"]').attr('content');
+                    $.post(link, {'name': name, '_token': token}, function (data) {
+                        $.cookie('true', data.status, {expires: 1, path: '/'});
+                        $.cookie('team',data.team_id,{expires:1,path:'/'});
+                    });
+                    console.log($.cookie('team'));
+                    console.log($.cookie('true'));
+                    if ($.cookie('true') != 0  && $.cookie('team') != 0) {
+                        var url_team = "{{route('teams')}}";
+                        $.post(url_team,{'name':name,'_token':token},function(data){
+                            $('.team').html(data);
+                            $('.vote').html('Bạn Đã Tham Gia Chia Đội TeamBuilding 2020 Và Bên Dưới Là Đội Của Bạn');
+                            $('#get-question').hide();
+                        });
+                    }
+                    else if ($.cookie('true') != null && $.cookie('team') == null && $.cookie('role') == 2) {
+                        var check = '{{route('vote2')}}';
+                        window.location = check;
+                    }
+                    else {
+                        var starline = new Date ("September 25, 2020 00:00:00");
+                        var now = new Date();
+                        var timeup = starline.setSeconds(starline.getSeconds());
+                        if (now >= timeup) {
+                            token = $('meta[name="csrf-token"]').attr('content');
+                            name = $.cookie('name');
+                            var url = '{{route('get.question')}}';
+                            $.post(url, {'name': name, '_token': token}, function (data) {
+                                $('#question').html(data);
+                            });
+                            $('#get-question').hide();
                         }
                         else {
-                                var check = '{{route('vote2')}}';
-                                window.location = check;
+                            $('#get-question').hide();
+                            $('#question').html('<span style="text-align: center;display: block;width: 100%;font-weight: 700;margin-top: 20px;">Chương Trình Vẫn Chưa Tới Thời Gian Được Mở. Xin Quay Lại Vào ngày 25/09/2020 Để Tham Gia Chương Trình. Xin Cảm Ơn!!!</span>');
                         }
-                    });
-                    $('#get-question').hide();
+
+                    }
                 });
             }
         </script>

@@ -29,8 +29,8 @@ class PublicController extends Controller
     public function getQuestion()
     {
         $data = Input::get();
-        $code = $data['code'];
-        $user = Preson::where('code',$data['code'])->first();
+        $code = $data['name'];
+        $user = Preson::where('name',$data['name'])->first();
         $question = Question::where('category_question',1)->get()->toArray();
         $question1 = Question::where('category_question',2)->get()->toArray();
         if ($user->question_id != null )
@@ -41,7 +41,7 @@ class PublicController extends Controller
         }else{
             $array = [];
             $j = 1;
-            while ($j < 7 )
+            while ($j < 4 )
             {
                 $i = rand(0,198);
                 if (in_array($question[$i]['id'], $array)) {
@@ -53,7 +53,7 @@ class PublicController extends Controller
 
             }
             $k =1;
-            while($k < 5){
+            while($k < 3){
                 $o = rand(0,15);
                 if (in_array($question1[$o]['id'], $array)){
 
@@ -75,7 +75,7 @@ class PublicController extends Controller
     {
         $true = 0;
         $array = [];
-        for ($i=1;$i<=10;$i++){
+        for ($i=1;$i<=5;$i++){
             if (empty($request->anwer[$i])){
                 return redirect()->back()->with('errors','Bạn Chưa Trả Lời Hết Câu Hỏi!!!');
             }else{
@@ -88,23 +88,14 @@ class PublicController extends Controller
             }
 
         }
-        $code = $request->code;
-        $user = Preson::where('code',$request->code)->first();
+        $code = $request->name;
+        $user = Preson::where('name',$code)->first();
         $fail = Question::whereIn('id',$array)->get()->toArray();
-        if ($user->status == 1 && $user->role == 1 && $user->vote == 0){
-            return view ('vote2');
-        }elseif($user->status == 1 && $user->role == 1 && $user->vote == 1){
-            return view('thanks');
-        }elseif($user->status == 1 && $user->role == 2 && $user->vote == 0){
-            return view('thanks');
-        }else{
-            $role = $user->role;
-            $user->status = 1;
-            $user->true = $true;
-            $user->save();
-            return view('true',compact('code','true','fail','role'));
-        }
-
+        $role = $user->role;
+        $user->status = 1;
+        $user->true = $true;
+        $user->save();
+        return view('true',compact('code','true','fail','role'));
 
     }
     public function vote2(){
@@ -147,5 +138,35 @@ class PublicController extends Controller
         $teams = Team::where('id',$user['team_id'])->first();
         $users = Preson::where('team_id',$user['team_id'])->where('status',1)->get();
         return view('table',compact('users','teams'));
+    }
+
+
+
+    public function team()
+    {
+        $data = Input::get('name');
+        $user = Preson::where('name',$data)->first();
+        if ($user->team_id > 0){
+            $all_users = Preson::where('team_id',$user->team_id)->get();
+        }else{
+            $check_team = Team::where('number_member','<',12)->select('id')->get()->toArray();
+            $array = array();
+            if (sizeof($check_team) > 0){
+                foreach($check_team as $team){
+                    $array[$team['id']] =  'Team '.$team['id'];
+                }
+                $random = array_rand($array);
+                $user->team_id = $random;
+                $user->save();
+                $all_users = Preson::where('team_id',$random)->get();
+            }else{
+                $user->team_id = 1;
+                $user->save();
+                $all_users = Preson::where('team_id',1)->get();
+            }
+
+        }
+
+        return view('team',compact('all_users'));
     }
 }
