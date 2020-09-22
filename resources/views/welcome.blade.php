@@ -75,7 +75,7 @@
                         window.location = check;
                     }
                     else {
-                        var starline = new Date ("September 25, 2020 00:00:00");
+                        var starline = new Date ("September 15, 2020 00:00:00");
                         var now = new Date();
                         var timeup = starline.setSeconds(starline.getSeconds());
                         if (now >= timeup) {

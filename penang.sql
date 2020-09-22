@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2020-09-22 11:14:16
+Date: 2020-09-22 11:31:07
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -77,7 +77,7 @@ INSERT INTO `presons` VALUES ('3', 'Nguyễn Vân Hà Mi', '0', null, '0', '0', 
 INSERT INTO `presons` VALUES ('4', 'Phạm Quang Phan', '0', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('5', 'Đỗ Thị Lĩnh', '0', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('6', 'Bùi Thanh Thúy', '0', null, '0', '0', '0', '1', null, null);
-INSERT INTO `presons` VALUES ('7', 'Nguyễn Chi Mai', '0', null, '0', '0', '0', '1', null, null);
+INSERT INTO `presons` VALUES ('7', 'Nguyễn Chi Mai', '2', '119;153;149;209;133', '5', '1', '0', '1', null, '2020-09-22 11:29:05');
 INSERT INTO `presons` VALUES ('8', 'Phạm Đình Cao', '0', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('9', 'Nguyễn Thị Thanh Hương', '0', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('10', 'Bùi Thị Hồng Thúy', '0', null, '0', '0', '0', '1', null, null);
@@ -97,7 +97,7 @@ INSERT INTO `presons` VALUES ('23', 'Trần Minh Hải', '0', null, '0', '0', '0
 INSERT INTO `presons` VALUES ('24', 'Lại Bá Dũng', '0', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('25', 'Nguyễn Minh Dũng', '0', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('26', 'Phạm Trung Hiếu', '0', null, '0', '0', '0', '1', null, null);
-INSERT INTO `presons` VALUES ('27', 'Nguyễn Thị Thu Hiền', '0', null, '0', '0', '0', '1', null, null);
+INSERT INTO `presons` VALUES ('27', 'Nguyễn Thị Thu Hiền', '2', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('28', 'Trần Quang Hoài', '2', '134;13;158;214;205', '5', '1', '0', '1', null, '2020-09-22 11:12:03');
 INSERT INTO `presons` VALUES ('29', 'Hà Đăng Sáng', '0', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('30', 'Lê Thùy Ngọc Khanh', '0', null, '0', '0', '0', '1', null, null);
