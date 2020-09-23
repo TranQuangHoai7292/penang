@@ -70,7 +70,7 @@
                             $('#get-question').hide();
                         });
                     }
-                    else if ($.cookie('true') != null && $.cookie('team') == null && $.cookie('role') == 2) {
+                    else if ($.cookie('true') != 0 && $.cookie('team') == 0) {
                         var check = '{{route('vote2')}}';
                         window.location = check;
                     }

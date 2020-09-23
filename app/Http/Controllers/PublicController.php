@@ -156,10 +156,16 @@ class PublicController extends Controller
                     $array[$team['id']] =  'Team '.$team['id'];
                 }
                 $random = array_rand($array);
+                $team = Team::where('id',$random)->first();
+                $team->number_member = $team->number_member + 1;
+                $team->save();
                 $user->team_id = $random;
                 $user->save();
                 $all_users = Preson::where('team_id',$random)->get();
             }else{
+                $team = Team::where('id',1)->first();
+                $team->number_member = $team->number_member + 1;
+                $team->save();
                 $user->team_id = 1;
                 $user->save();
                 $all_users = Preson::where('team_id',1)->get();

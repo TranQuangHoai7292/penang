@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2020-09-22 11:31:07
+Date: 2020-09-23 08:41:39
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -98,7 +98,7 @@ INSERT INTO `presons` VALUES ('24', 'Lại Bá Dũng', '0', null, '0', '0', '0',
 INSERT INTO `presons` VALUES ('25', 'Nguyễn Minh Dũng', '0', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('26', 'Phạm Trung Hiếu', '0', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('27', 'Nguyễn Thị Thu Hiền', '2', null, '0', '0', '0', '1', null, null);
-INSERT INTO `presons` VALUES ('28', 'Trần Quang Hoài', '2', '134;13;158;214;205', '5', '1', '0', '1', null, '2020-09-22 11:12:03');
+INSERT INTO `presons` VALUES ('28', 'Trần Quang Hoài', '2', '134;13;158;214;205', '5', '1', '0', '1', null, '2020-09-23 08:40:36');
 INSERT INTO `presons` VALUES ('29', 'Hà Đăng Sáng', '0', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('30', 'Lê Thùy Ngọc Khanh', '0', null, '0', '0', '0', '1', null, null);
 INSERT INTO `presons` VALUES ('31', 'Trần Thị Thu Hạnh', '0', null, '0', '0', '0', '1', null, null);
@@ -380,10 +380,10 @@ CREATE TABLE `teams` (
 -- ----------------------------
 -- Records of teams
 -- ----------------------------
-INSERT INTO `teams` VALUES ('1', 'Team 1', '0', '2019-07-11 08:43:36', '2019-07-11 08:43:36');
-INSERT INTO `teams` VALUES ('2', 'Team 2', '0', '2019-07-11 08:43:36', '2019-07-11 08:35:52');
-INSERT INTO `teams` VALUES ('3', 'Team 3', '0', '2019-07-11 08:43:36', '2019-07-10 16:51:16');
-INSERT INTO `teams` VALUES ('4', 'Team 4', '0', '2019-07-11 08:43:36', '2019-07-11 08:39:49');
+INSERT INTO `teams` VALUES ('1', 'Team 1', '1', '2019-07-11 08:43:36', '2020-09-23 08:40:36');
+INSERT INTO `teams` VALUES ('2', 'Team 2', '4', '2019-07-11 08:43:36', '2019-07-11 08:35:52');
+INSERT INTO `teams` VALUES ('3', 'Team 3', '1', '2019-07-11 08:43:36', '2019-07-10 16:51:16');
+INSERT INTO `teams` VALUES ('4', 'Team 4', '1', '2019-07-11 08:43:36', '2019-07-11 08:39:49');
 
 -- ----------------------------
 -- Table structure for truequestions
