@@ -314,7 +314,7 @@
             <tr class="heading">
                 <th>STT</th>
                 <th>Họ Và tên</th>
-                <th>Mã Nhân Viên</th>
+                <th>Số Câu Trả Lời</th>
                 <th>Trạng Thái</th>
             </tr>
             </thead>
@@ -350,7 +350,7 @@
                 <tr>
                     <td>{{$stt++}}</td>
                     <td>{{$row['name']}}</td>
-                    <td>{{$row['code']}}</td>
+                    <td>{{$row['true']}}</td>
                     <td>Chưa Tham Gia</td>
                 </tr>
 
