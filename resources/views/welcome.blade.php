@@ -9,7 +9,7 @@
                 @endif
                 <div class="col-xl-12">
                     <h3 style="text-align: center;font-weight: 900;color: black">
-                        <strong class="vote">TEAM BUILDING ĐÀ LẠT 2020</strong>
+                        <strong class="vote">TEAM BUILDING HÒA BÌNH - TNR 2020</strong>
                     </h3>
                 </div>
                 <div class="col-xl-12" style="text-align: center">
@@ -25,23 +25,23 @@
             </div>
         </div>
         <script type="text/javascript">
-            var name = '';
+            var code = '';
             var token = $('meta[name="csrf-token"]').attr('content');
-            if ($.cookie('name') == undefined) {
+            if ($.cookie('code') == undefined) {
                 $('#get-question').click(function () {
                     $('#exampleModal').modal('show');
                 });
                 $('#check-user').click(function(){
                     var url = '{{route('check.user')}}' ;
-                    name =   $('#code').val();
-                    $.post(url,{'name':name,'_token':token},function(data){
+                    code =   $('#code').val();
+                    $.post(url,{'code':code,'_token':token},function(data){
                         if (data){
                             swal('Chào Mừng Bạn ' + data.name,'','success');
                             $.cookie('true',data.status,{expires:1,path:'/'});
                             $.cookie('fail',data.fail,{expires:1,path:'/'});
                             $.cookie('vote',data.vote,{expires:1,path:'/'});
                             $.cookie('role',data.role,{expires:1,path:'/'});
-                            $.cookie('name',data.name,{expires:1,path:'/'});
+                            $.cookie('code',data.code,{expires:1,path:'/'});
                             $.cookie('team',data.team_id,{expires:1,path:'/'});
                             setTimeout(function(){
                                 window.location.reload();
@@ -54,9 +54,9 @@
             }else{
                 $(document).ready(function() {
                     var link = '{{route('check.user')}}';
-                    name = $.cookie('name');
+                    code = $.cookie('code');
                     var token = $('meta[name="csrf-token"]').attr('content');
-                    $.post(link, {'name': name, '_token': token}, function (data) {
+                    $.post(link, {'code': code, '_token': token}, function (data) {
                         $.cookie('true', data.status, {expires: 1, path: '/'});
                         $.cookie('team',data.team_id,{expires:1,path:'/'});
                     });
@@ -64,7 +64,7 @@
                     console.log($.cookie('true'));
                     if ($.cookie('true') != 0  && $.cookie('team') != 0) {
                         var url_team = "{{route('teams')}}";
-                        $.post(url_team,{'name':name,'_token':token},function(data){
+                        $.post(url_team,{'code':code,'_token':token},function(data){
                             $('.team').html(data);
                             $('.vote').html('Bạn Đã Tham Gia Chia Đội TeamBuilding 2020 Và Bên Dưới Là Đội Của Bạn');
                             $('#get-question').hide();
@@ -80,9 +80,9 @@
                         var timeup = starline.setSeconds(starline.getSeconds());
                         if (now >= timeup) {
                             token = $('meta[name="csrf-token"]').attr('content');
-                            name = $.cookie('name');
+                            code = $.cookie('code');
                             var url = '{{route('get.question')}}';
-                            $.post(url, {'name': name, '_token': token}, function (data) {
+                            $.post(url, {'code': code, '_token': token}, function (data) {
                                 $('#question').html(data);
                             });
                             $('#get-question').hide();

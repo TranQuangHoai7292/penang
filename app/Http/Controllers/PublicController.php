@@ -17,7 +17,7 @@ class PublicController extends Controller
     public function checkUser()
     {
         $data = Input::get();
-        $user = Preson::where('name',$data['name'])->first();
+        $user = Preson::where('code',$data['code'])->first();
         if ($user == null){
             return $user;
         }else{
@@ -29,21 +29,22 @@ class PublicController extends Controller
     public function getQuestion()
     {
         $data = Input::get();
-        $code = $data['name'];
-        $user = Preson::where('name',$data['name'])->first();
+        $code = $data['code'];
+        $user = Preson::where('code',$data['code'])->first();
         $question = Question::where('category_question',1)->get()->toArray();
-        $question1 = Question::where('category_question',2)->get()->toArray();
         if ($user->question_id != null )
         {
+
             $q_id = $user->question_id;
             $q_array = explode(';',$q_id);
             $q = Question::whereIn('id',$q_array)->get()->toArray();
         }else{
+
             $array = [];
             $j = 1;
-            while ($j < 4 )
+            while ($j < 6 )
             {
-                $i = rand(0,198);
+                $i = rand(0,11);
                 if (in_array($question[$i]['id'], $array)) {
 
                 } else {
@@ -51,16 +52,6 @@ class PublicController extends Controller
                     $j++;
                 }
 
-            }
-            $k =1;
-            while($k < 3){
-                $o = rand(0,15);
-                if (in_array($question1[$o]['id'], $array)){
-
-                }else{
-                    array_push($array, $question1[$o]['id']);
-                    $k++;
-                }
             }
             $q = Question::whereIn('id',$array)->get()->toArray();
             $user->question_id = implode(';',$array);
@@ -88,8 +79,8 @@ class PublicController extends Controller
             }
 
         }
-        $code = $request->name;
-        $user = Preson::where('name',$code)->first();
+        $code = $request->code;
+        $user = Preson::where('code',$code)->first();
         $fail = Question::whereIn('id',$array)->get()->toArray();
         $role = $user->role;
         $user->status = 1;
@@ -109,7 +100,7 @@ class PublicController extends Controller
     public function vote(Request $request)
     {
         if ($request->khaosat != null){
-            $user = Preson::where('name',$request->code)->first();
+            $user = Preson::where('code',$request->code)->first();
             $user->vote = $request->khaosat;
             $user->role = 2;
             $user->save();
@@ -144,12 +135,13 @@ class PublicController extends Controller
 
     public function team()
     {
-        $data = Input::get('name');
-        $user = Preson::where('name',$data)->first();
+        $data = Input::get('code');
+        $user = Preson::where('code',$data)->first();
+
         if ($user->team_id > 0){
             $all_users = Preson::where('team_id',$user->team_id)->get();
         }else{
-            $check_team = Team::where('number_member','<',12)->select('id')->get()->toArray();
+            $check_team = Team::where('number_member','<',16)->select('id')->get()->toArray();
             $array = array();
             if (sizeof($check_team) > 0){
                 foreach($check_team as $team){

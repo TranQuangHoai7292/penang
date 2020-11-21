@@ -22,7 +22,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header" style="text-align: center">
-                <h5 class="modal-title" id="exampleModalLabel">Nhập Chính Xác Họ Và Tên Để Tiến Hành Bình Chọn</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Nhập Chính Xác Mã Nhân Viên Để Tiến Hành Bình Chọn</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -30,7 +30,7 @@
             <div class="modal-body">
                 <div>
                     <div class="form-group">
-                        <input type="text" class="form-control"  placeholder="Họ và Tên" id="code">
+                        <input type="text" class="form-control"  placeholder="Mã Nhân Viên" id="code">
                     </div>
                     <button type="submit" class="btn btn-primary check-user" id="check-user">Gửi</button>
                 </div>

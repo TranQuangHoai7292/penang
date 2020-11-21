@@ -55,7 +55,7 @@
                 <form id="chiateam">
                     <div class="row">
                         <div class="col-sm-12">
-                            <input type="hidden" name="name" value="" >
+                            <input type="hidden" name="code" value="" >
                         </div>
                         <div class="col-sm-12 t-a">
                             <input type="button" class="btn btn-primary chia-team" value="Bấm Chia Team" id="question-value">
@@ -71,12 +71,12 @@
         </div>
     </div>
     <script>
-        var name = $.cookie('name');
+        var code = $.cookie('code');
         var url = "{{route('teams')}}";
         var token = "{{csrf_token()}}";
         $('.chia-team').on('click',function(){
-            $('input[name=name]').attr('value',$.cookie('name'));
-            $.post(url,{'name':name,'_token':token},function(data){
+            $('input[name=name]').attr('value',$.cookie('code'));
+            $.post(url,{'code':code,'_token':token},function(data){
                 $('.team').html(data);
             })
         });

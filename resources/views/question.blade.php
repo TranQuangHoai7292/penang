@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <input type="hidden" name="question[{{$stt}}]" value="{{$foryou['id']}}">
-                    <input type="hidden" name="name" value="{{$code}}">
+                    <input type="hidden" name="code" value="{{$code}}">
                     <div class="row">
                         <div class="col-sm-6 ">
                             <input type="radio" name="anwer[{{$stt}}]" value="1">
@@ -34,6 +34,16 @@
                             @if ($foryou['D'] !== null)
                                 <input type="radio" name="anwer[{{$stt}}]" value="4">
                                 D. {{$foryou['D']}}
+                            @endif
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 ">
+                            @if ($foryou['E'] !== null)
+                                <input type="radio" name="anwer[{{$stt}}]" value="5">
+                                E. {{$foryou['E']}}
                             @endif
                         </div>
                     </div>
