@@ -44,7 +44,7 @@ class PublicController extends Controller
             $j = 1;
             while ($j < 6 )
             {
-                $i = rand(0,11);
+                $i = rand(0,14);
                 if (in_array($question[$i]['id'], $array)) {
 
                 } else {
