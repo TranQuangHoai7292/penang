@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2020-11-21 11:05:51
+Date: 2020-11-23 10:27:06
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -76,7 +76,6 @@ INSERT INTO `presons` VALUES ('1', 'Phạm Đình Cao', '025443', '0', null, '0'
 INSERT INTO `presons` VALUES ('2', 'Lê Hữu Tú', '025473', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('3', 'Bùi Thị Hồng Thúy', '025457', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('4', 'Nguyễn Thị Thanh Hương', '025448', '0', null, '0', '0', '0', '0', null, null);
-INSERT INTO `presons` VALUES ('5', 'Bùi Thanh Thúy', '025480', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('6', 'Nguyễn Chi Mai', '025477', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('7', 'Nguyễn Huy Hoàng', '025482', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('8', 'Lê Thị Nga', '025452', '0', null, '0', '0', '0', '0', null, null);
@@ -95,13 +94,11 @@ INSERT INTO `presons` VALUES ('20', 'Lê Thị Thu Hiền', '025481', '0', null,
 INSERT INTO `presons` VALUES ('21', 'Ngô Văn Tam', '025476', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('22', 'Phạm Văn Cảnh', '025472', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('23', 'Tống Thị Anh Khiêm', '025462', '0', null, '0', '0', '0', '0', null, null);
-INSERT INTO `presons` VALUES ('24', 'Phạm Thị Vân Hà', '025435', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('25', 'Vũ Thu Trang', '025463', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('26', 'Lê Thùy Ngọc Khanh', '025451', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('27', 'Trần Thị Thu Hạnh', '025479', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('28', 'Hồ Hồng Ngọc', '025491', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('29', 'Nguyễn Thành Trung', '025455', '0', null, '0', '0', '0', '0', null, null);
-INSERT INTO `presons` VALUES ('30', 'Lại Bá Dũng', '025464', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('31', 'Nguyễn Quang Minh', '025450', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('32', 'Trần Minh Hải', '025459', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('33', 'Nguyễn Minh Dũng', '025468', '0', null, '0', '0', '0', '0', null, null);
@@ -190,6 +187,9 @@ INSERT INTO `questions` VALUES ('9', '5 Giá trị cốt lõi của TNR là gì?
 INSERT INTO `questions` VALUES ('10', 'Sứ mệnh của TNR là gì?', 'Nâng tầm chất lượng cuộc sống cho người Việt bằng các sản phẩm giá trị, hiện đại, sáng tạo và dẫn đầu xu hướng', 'Nâng tầm chất lượng cuộc sống cho người Việt', 'Nâng tầm chất lượng cuộc sống cho người Việt', 'Nâng tầm chất lượng cuộc sống cho TNGers', null, '1', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
 INSERT INTO `questions` VALUES ('11', 'Tầm nhìn của TNR là gì?', 'Trở thành tập đoàn quản lý và phát triển bất động sản thuộc Top đầu tại Việt Nam, hướng tới trở thành tập đoàn danh tiếng trong khu vực', 'Trở thành tập đoàn quản lý và phát triển bất động sản hàng đầu thế giới', 'Trở thành tập đoàn quản lý và phát triển bất động sản hàng đầu khu vực', 'Trở thành tập đoàn quản lý và phát triển bất động sản Số 1 tại Việt Nam', null, '1', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
 INSERT INTO `questions` VALUES ('12', 'Các tinh thần nền tảng văn hoá của TNR là gì?', 'Người dẫn đầu', 'Xây chuẩn mực', 'Tạo xu thế', 'Vượt giới hạn', 'Tất cả các đáp án trên', '5', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
+INSERT INTO `questions` VALUES ('13', 'Ban truyền thông có những vị trí nào?', 'Thiết kế, Nội dung', 'Thiết kế, thương hiệu, đối ngoại', 'Thiết kế, Thương hiệu, nội bộ, đối ngoại', 'Tất cả đáp án trên đều sai', null, '3', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
+INSERT INTO `questions` VALUES ('14', 'Người trẻ tuổi nhất  của ban truyền thông sinh năm bao nhiêu?', '1994', '1995', '1996', '1997', null, '2', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
+INSERT INTO `questions` VALUES ('15', 'Trong Ban truyền thông team nào có tỷ lệ bình đẳng giới?', 'Team thiết kế', 'Team thương hiệu', 'Team nội bộ', 'Team đối ngoại', null, '3', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
 
 -- ----------------------------
 -- Table structure for teams
