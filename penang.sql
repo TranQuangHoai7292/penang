@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2020-11-23 10:27:06
+Date: 2020-11-23 13:29:42
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -72,14 +72,14 @@ CREATE TABLE `presons` (
 -- ----------------------------
 -- Records of presons
 -- ----------------------------
-INSERT INTO `presons` VALUES ('1', 'Phạm Đình Cao', '025443', '0', null, '0', '0', '0', '0', null, null);
+INSERT INTO `presons` VALUES ('1', 'Phạm Đình Cao', '025443', '5', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('2', 'Lê Hữu Tú', '025473', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('3', 'Bùi Thị Hồng Thúy', '025457', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('4', 'Nguyễn Thị Thanh Hương', '025448', '0', null, '0', '0', '0', '0', null, null);
-INSERT INTO `presons` VALUES ('6', 'Nguyễn Chi Mai', '025477', '0', null, '0', '0', '0', '0', null, null);
+INSERT INTO `presons` VALUES ('6', 'Nguyễn Chi Mai', '025477', '1', '3;9;7;8;12', '5', '1', '0', '0', null, '2020-11-23 17:31:55');
 INSERT INTO `presons` VALUES ('7', 'Nguyễn Huy Hoàng', '025482', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('8', 'Lê Thị Nga', '025452', '0', null, '0', '0', '0', '0', null, null);
-INSERT INTO `presons` VALUES ('9', 'Đỗ Mạnh Dũng', '025438', '0', null, '0', '0', '0', '0', null, null);
+INSERT INTO `presons` VALUES ('9', 'Đỗ Mạnh Dũng', '025438', '1', null, '0', '0', '0', '2', null, null);
 INSERT INTO `presons` VALUES ('10', 'Nguyễn Tiến Nam', '025453', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('11', 'Trương Long Hải', '025439', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('12', 'Nguyễn Thị Yến Ngọc', '025511', '0', null, '0', '0', '0', '0', null, null);
@@ -94,7 +94,7 @@ INSERT INTO `presons` VALUES ('20', 'Lê Thị Thu Hiền', '025481', '0', null,
 INSERT INTO `presons` VALUES ('21', 'Ngô Văn Tam', '025476', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('22', 'Phạm Văn Cảnh', '025472', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('23', 'Tống Thị Anh Khiêm', '025462', '0', null, '0', '0', '0', '0', null, null);
-INSERT INTO `presons` VALUES ('25', 'Vũ Thu Trang', '025463', '0', null, '0', '0', '0', '0', null, null);
+INSERT INTO `presons` VALUES ('25', 'Vũ Thu Trang', '025463', '2', null, '0', '0', '0', '2', null, null);
 INSERT INTO `presons` VALUES ('26', 'Lê Thùy Ngọc Khanh', '025451', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('27', 'Trần Thị Thu Hạnh', '025479', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('28', 'Hồ Hồng Ngọc', '025491', '0', null, '0', '0', '0', '0', null, null);
@@ -104,7 +104,7 @@ INSERT INTO `presons` VALUES ('32', 'Trần Minh Hải', '025459', '0', null, '0
 INSERT INTO `presons` VALUES ('33', 'Nguyễn Minh Dũng', '025468', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('34', 'Phạm Trung Hiếu', '025470', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('35', 'Nguyễn Thị Thu Hiền', '025488', '0', null, '0', '0', '0', '0', null, null);
-INSERT INTO `presons` VALUES ('36', 'Trần Quang Hoài', '025490', '3', '6;3;2;12;10', '5', '1', '0', '0', null, '2020-11-21 10:55:43');
+INSERT INTO `presons` VALUES ('36', 'Trần Quang Hoài', '025490', '3', '6;3;2;12;10', '5', '1', '0', '0', null, '2020-11-21 17:55:43');
 INSERT INTO `presons` VALUES ('37', 'Nguyễn Phương Thảo', '025458', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('38', 'Giang Diệu Linh', '025465', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('39', 'Hoàng Thị Thủy', '025471', '0', null, '0', '0', '0', '0', null, null);
@@ -113,7 +113,7 @@ INSERT INTO `presons` VALUES ('41', 'Nguyễn Mạnh Hải', '025484', '0', null
 INSERT INTO `presons` VALUES ('42', 'Lê Trung Hiếu', '025485', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('43', 'Nguyễn Xuân Công', '025486', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('44', 'Nguyễn Thị Hà', '025489', '0', null, '0', '0', '0', '0', null, null);
-INSERT INTO `presons` VALUES ('45', 'Hoàng Thúy Duyên', '025442', '0', null, '0', '0', '0', '0', null, null);
+INSERT INTO `presons` VALUES ('45', 'Hoàng Thúy Duyên', '025442', '4', '2;7;6;5;4', '5', '1', '0', '0', null, '2020-11-23 17:28:39');
 INSERT INTO `presons` VALUES ('46', 'Nguyễn Văn Hiếu', '025498', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('47', 'Vũ Văn Hoàng', '025499', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('48', 'Nguyễn Đức An', '025500', '0', null, '0', '0', '0', '0', null, null);
@@ -145,7 +145,7 @@ INSERT INTO `presons` VALUES ('73', 'Đào Văn Hân', '024497', '0', null, '0',
 INSERT INTO `presons` VALUES ('74', 'Vũ Đỗ Quyên', '024498', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('75', 'Nguyễn Thu Hà', '026039', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('76', 'Công Thị Quỳnh', '024488', '0', null, '0', '0', '0', '0', null, null);
-INSERT INTO `presons` VALUES ('77', 'Hoàng Thọ Khánh Toàn', '027821', '0', null, '0', '0', '0', '0', null, null);
+INSERT INTO `presons` VALUES ('77', 'Hoàng Thọ Khánh Toàn', '027821', '4', null, '0', '0', '0', '2', null, null);
 INSERT INTO `presons` VALUES ('78', 'Nguyễn Đức Minh', '012276', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('79', 'Nguyễn Hồng Quân', '024636', '0', null, '0', '0', '0', '0', null, null);
 INSERT INTO `presons` VALUES ('80', 'Trần Thanh Tùng', '024672', '0', null, '0', '0', '0', '0', null, null);
@@ -175,21 +175,21 @@ CREATE TABLE `questions` (
 -- ----------------------------
 -- Records of questions
 -- ----------------------------
-INSERT INTO `questions` VALUES ('1', 'Đầy đủ tên của TNR trên Đăng ký kinh doanh là gì?', 'Công Ty Cổ Phần Đầu Tư Phát Triển Bất Động Sản TNR Holdings Việt Nam', 'Công Ty Cổ Phần Đầu Tư & Phát Triển Bất Động Sản TNR Holdings Việt Nam', 'Công Ty Cổ Phần Đầu Tư Phát Triển Bất Động Sản TNR Holdings Vietnam', 'Công Ty Cổ Phần Đầu Tư & Phát Triển Bất Động Sản TNR Holdings Vietnam', null, '1', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('2', 'Slogan của TNR là gì?', 'Cộng hưởng giá trị - Hạnh phúc vững bền', 'Cộng hưởng giá trị - Hạnh phúc bền vững', 'Cộng hưởng vững bền – Giá trị hạnh phúc', 'Cộng hưởng hạnh phúc – Giá trị vững bền', null, '1', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('3', 'TNR được thành lập vào năm nào?', '2013', '2014', '2015', '2016', null, '2', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('4', 'Dòng sản phẩm TNR Stars được ra mắt vào năm nào?', '2014', '2015', '2016', '2017', null, '4', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('5', 'Dòng sản phẩm TNR Grand Palace được ra mắt vào năm nào?', '2017', '2018', '2019', '2020', null, '4', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('6', 'Toà văn phòng hạng A – TNR Tower 54A Nguyễn Chí Thanh được khai trương vào năm nào?', '2014', '2015', '2016', '2017', null, '2', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('7', 'Dự án TNR Goldmark City đã đạt kỷ lực nào?', 'Kỷ lục Tổ hợp căn hộ có nhiều Quảng trường nhất Việt Nam', 'Kỷ lục Bức tranh 3D dài nhất Việt Nam', 'Cả 2 đáp án trên đều đúng', 'Cả 2 đáp án đều không đúng', null, '3', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('8', 'TNR hiện có những dòng sản phẩm bất động sản nào đã chính thức ra mắt?', 'TNR Gold, TNR Stars, TNR Grand Palace', 'TNR Gold, TNR Stars, TNR Grand Palace, TNR Royal', 'TNR Gold, TNR Stars, TNR Grand Palace, TNR Viva Panorama', 'TNR Gold, TNR Stars, TNR Grand Palace, TNR Royal, TNR Viva Panorama', null, '1', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('9', '5 Giá trị cốt lõi của TNR là gì?', 'Trách nhiệm – Chính trực – Tốc độ - Thấu hiểu – Hiệu quả', 'Trách nhiệm – Tốc độ - Khách hàng – Quyết đoán – Đổi mới', 'Trách nhiệm – Tốc độ - Khách hàng – Thấu hiểu – Đổi mới', 'Trách nhiệm – Thấu hiểu – Tốc độ - Khách hàng – Đổi mới', null, '2', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('10', 'Sứ mệnh của TNR là gì?', 'Nâng tầm chất lượng cuộc sống cho người Việt bằng các sản phẩm giá trị, hiện đại, sáng tạo và dẫn đầu xu hướng', 'Nâng tầm chất lượng cuộc sống cho người Việt', 'Nâng tầm chất lượng cuộc sống cho người Việt', 'Nâng tầm chất lượng cuộc sống cho TNGers', null, '1', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('11', 'Tầm nhìn của TNR là gì?', 'Trở thành tập đoàn quản lý và phát triển bất động sản thuộc Top đầu tại Việt Nam, hướng tới trở thành tập đoàn danh tiếng trong khu vực', 'Trở thành tập đoàn quản lý và phát triển bất động sản hàng đầu thế giới', 'Trở thành tập đoàn quản lý và phát triển bất động sản hàng đầu khu vực', 'Trở thành tập đoàn quản lý và phát triển bất động sản Số 1 tại Việt Nam', null, '1', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('12', 'Các tinh thần nền tảng văn hoá của TNR là gì?', 'Người dẫn đầu', 'Xây chuẩn mực', 'Tạo xu thế', 'Vượt giới hạn', 'Tất cả các đáp án trên', '5', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('13', 'Ban truyền thông có những vị trí nào?', 'Thiết kế, Nội dung', 'Thiết kế, thương hiệu, đối ngoại', 'Thiết kế, Thương hiệu, nội bộ, đối ngoại', 'Tất cả đáp án trên đều sai', null, '3', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('14', 'Người trẻ tuổi nhất  của ban truyền thông sinh năm bao nhiêu?', '1994', '1995', '1996', '1997', null, '2', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `questions` VALUES ('15', 'Trong Ban truyền thông team nào có tỷ lệ bình đẳng giới?', 'Team thiết kế', 'Team thương hiệu', 'Team nội bộ', 'Team đối ngoại', null, '3', '1', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
+INSERT INTO `questions` VALUES ('1', 'Đầy đủ tên của TNR trên Đăng ký kinh doanh là gì?', 'Công Ty Cổ Phần Đầu Tư Phát Triển Bất Động Sản TNR Holdings Việt Nam', 'Công Ty Cổ Phần Đầu Tư & Phát Triển Bất Động Sản TNR Holdings Việt Nam', 'Công Ty Cổ Phần Đầu Tư Phát Triển Bất Động Sản TNR Holdings Vietnam', 'Công Ty Cổ Phần Đầu Tư & Phát Triển Bất Động Sản TNR Holdings Vietnam', null, '1', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('2', 'Slogan của TNR là gì?', 'Cộng hưởng giá trị - Hạnh phúc vững bền', 'Cộng hưởng giá trị - Hạnh phúc bền vững', 'Cộng hưởng vững bền – Giá trị hạnh phúc', 'Cộng hưởng hạnh phúc – Giá trị vững bền', null, '1', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('3', 'TNR được thành lập vào năm nào?', '2013', '2014', '2015', '2016', null, '2', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('4', 'Dòng sản phẩm TNR Stars được ra mắt vào năm nào?', '2014', '2015', '2016', '2017', null, '4', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('5', 'Dòng sản phẩm TNR Grand Palace được ra mắt vào năm nào?', '2017', '2018', '2019', '2020', null, '4', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('6', 'Toà văn phòng hạng A – TNR Tower 54A Nguyễn Chí Thanh được khai trương vào năm nào?', '2014', '2015', '2016', '2017', null, '2', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('7', 'Dự án TNR Goldmark City đã đạt kỷ lực nào?', 'Kỷ lục Tổ hợp căn hộ có nhiều Quảng trường nhất Việt Nam', 'Kỷ lục Bức tranh 3D dài nhất Việt Nam', 'Cả 2 đáp án trên đều đúng', 'Cả 2 đáp án đều không đúng', null, '3', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('8', 'TNR hiện có những dòng sản phẩm bất động sản nào đã chính thức ra mắt?', 'TNR Gold, TNR Stars, TNR Grand Palace', 'TNR Gold, TNR Stars, TNR Grand Palace, TNR Royal', 'TNR Gold, TNR Stars, TNR Grand Palace, TNR Viva Panorama', 'TNR Gold, TNR Stars, TNR Grand Palace, TNR Royal, TNR Viva Panorama', null, '1', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('9', '5 Giá trị cốt lõi của TNR là gì?', 'Trách nhiệm – Chính trực – Tốc độ - Thấu hiểu – Hiệu quả', 'Trách nhiệm – Tốc độ - Khách hàng – Quyết đoán – Đổi mới', 'Trách nhiệm – Tốc độ - Khách hàng – Thấu hiểu – Đổi mới', 'Trách nhiệm – Thấu hiểu – Tốc độ - Khách hàng – Đổi mới', null, '2', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('10', 'Sứ mệnh của TNR là gì?', 'Nâng tầm chất lượng cuộc sống cho người Việt bằng các sản phẩm giá trị, hiện đại, sáng tạo và dẫn đầu xu hướng', 'Nâng tầm chất lượng cuộc sống cho người Việt', 'Nâng tầm chất lượng cuộc sống cho người Việt', 'Nâng tầm chất lượng cuộc sống cho TNGers', null, '1', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('11', 'Tầm nhìn của TNR là gì?', 'Trở thành tập đoàn quản lý và phát triển bất động sản thuộc Top đầu tại Việt Nam, hướng tới trở thành tập đoàn danh tiếng trong khu vực', 'Trở thành tập đoàn quản lý và phát triển bất động sản hàng đầu thế giới', 'Trở thành tập đoàn quản lý và phát triển bất động sản hàng đầu khu vực', 'Trở thành tập đoàn quản lý và phát triển bất động sản Số 1 tại Việt Nam', null, '1', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('12', 'Các tinh thần nền tảng văn hoá của TNR là gì?', 'Người dẫn đầu', 'Xây chuẩn mực', 'Tạo xu thế', 'Vượt giới hạn', 'Tất cả các đáp án trên', '5', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('13', 'Ban truyền thông có những vị trí nào?', 'Thiết kế, Nội dung', 'Thiết kế, thương hiệu, đối ngoại', 'Thiết kế, Thương hiệu, nội bộ, đối ngoại', 'Tất cả đáp án trên đều sai', null, '3', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('14', 'Người trẻ tuổi nhất  của ban truyền thông sinh năm bao nhiêu?', '1994', '1995', '1996', '1997', null, '2', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `questions` VALUES ('15', 'Trong Ban truyền thông team nào có tỷ lệ bình đẳng giới?', 'Team thiết kế', 'Team thương hiệu', 'Team nội bộ', 'Team đối ngoại', null, '3', '1', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
 
 -- ----------------------------
 -- Table structure for teams
@@ -207,11 +207,11 @@ CREATE TABLE `teams` (
 -- ----------------------------
 -- Records of teams
 -- ----------------------------
-INSERT INTO `teams` VALUES ('1', 'Team 1', '0', '2019-07-11 08:43:36', '2020-09-25 13:54:26');
-INSERT INTO `teams` VALUES ('2', 'Team 2', '0', '2019-07-11 08:43:36', '2020-11-20 17:10:13');
-INSERT INTO `teams` VALUES ('3', 'Team 3', '1', '2019-07-11 08:43:36', '2020-11-21 10:55:43');
-INSERT INTO `teams` VALUES ('4', 'Team 4', '0', '2019-07-11 08:43:36', '2020-09-25 13:54:26');
-INSERT INTO `teams` VALUES ('5', 'Team 5', '0', '2019-07-11 08:43:36', '2020-09-25 13:54:26');
+INSERT INTO `teams` VALUES ('1', 'Team 1', '2', '2019-07-11 15:43:36', '2020-11-23 17:31:55');
+INSERT INTO `teams` VALUES ('2', 'Team 2', '1', '2019-07-11 15:43:36', '2020-11-21 00:10:13');
+INSERT INTO `teams` VALUES ('3', 'Team 3', '1', '2019-07-11 15:43:36', '2020-11-21 17:55:43');
+INSERT INTO `teams` VALUES ('4', 'Team 4', '2', '2019-07-11 15:43:36', '2020-11-23 17:28:39');
+INSERT INTO `teams` VALUES ('5', 'Team 5', '1', '2019-07-11 15:43:36', '2020-09-25 20:54:26');
 
 -- ----------------------------
 -- Table structure for truequestions
@@ -228,11 +228,11 @@ CREATE TABLE `truequestions` (
 -- ----------------------------
 -- Records of truequestions
 -- ----------------------------
-INSERT INTO `truequestions` VALUES ('1', 'A', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `truequestions` VALUES ('2', 'B', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `truequestions` VALUES ('3', 'C', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `truequestions` VALUES ('4', 'D', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
-INSERT INTO `truequestions` VALUES ('5', 'E', '2019-07-08 15:54:43', '2019-07-08 15:54:43');
+INSERT INTO `truequestions` VALUES ('1', 'A', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `truequestions` VALUES ('2', 'B', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `truequestions` VALUES ('3', 'C', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `truequestions` VALUES ('4', 'D', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
+INSERT INTO `truequestions` VALUES ('5', 'E', '2019-07-08 22:54:43', '2019-07-08 22:54:43');
 
 -- ----------------------------
 -- Table structure for users
@@ -254,4 +254,4 @@ CREATE TABLE `users` (
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES ('1', 'Trần Quang Hoài', 'hoaitq2@tng-holdings.vn', null, '$2y$10$mYWPwCp.vDqW1oLCa.nRj.GOfhXb9xUQEjsbINuuqoxmTUe/QOwVy', null, '2019-10-10 13:22:19', '2019-10-10 13:22:19');
+INSERT INTO `users` VALUES ('1', 'Trần Quang Hoài', 'hoaitq2@tng-holdings.vn', null, '$2y$10$mYWPwCp.vDqW1oLCa.nRj.GOfhXb9xUQEjsbINuuqoxmTUe/QOwVy', null, '2019-10-10 20:22:19', '2019-10-10 20:22:19');
