@@ -124,7 +124,6 @@ class PublicController extends Controller
     public function getTable()
     {
         $data = Input::get();
-//        $user = Preson::where('')->where('status',1)->select('id','name','code','team_id')->get()->toArray();
         $user = Preson::where('code',$data['code'])->where('status',1)->select('id','name','code','team_id')->first()->toArray();
         $teams = Team::where('id',$user['team_id'])->first();
         $users = Preson::where('team_id',$user['team_id'])->where('status',1)->get();
