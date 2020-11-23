@@ -5,11 +5,11 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
-                <h3 style="text-align: center;font-weight: 900;color: black"><strong>Kiểm Tra Văn Hóa Giai Đoạn 3</strong></h3>
+                <h3 style="text-align: center;font-weight: 900;color: black"><strong>Kiểm Tra Văn Hóa</strong></h3>
             </div>
         </div>
         <h5 style="color:black;font-weight: 700;text-align: center;margin-bottom: 20px">
-            Cảm ơn bạn đã tiến hành kiểm tra văn hóa giai đoạn 3 kết quả của bạn là đã trả lời được <span style="color:red">{{5 - count($fail)}}/5 câu hỏi</span>.
+            Cảm ơn bạn đã tiến hành kiểm tra văn hóa kết quả của bạn là đã trả lời được <span style="color:red">{{5 - count($fail)}}/5 câu hỏi</span>.
             @if (sizeof($fail) > 0)
             Đây là các câu hỏi bạn đã trả lời sai và đáp án của câu hỏi:
                 @endif
