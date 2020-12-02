@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <meta name="csrf-token" content="{{csrf_token()}}">
-    <title>TEAM BUILDING TNR 2020</title>
+    <title>X6 TINH ANH HỘI TỤ - HỢP SỨC PHÁ BĂNG</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="shortcut icon" href="{{asset('images/favicon.png')}}">
     <link href="{{asset('css/style.css')}}" type="text/css" rel="stylesheet">

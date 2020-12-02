@@ -1,5 +1,8 @@
 @extends('layouts.master')
 @section('content')
+        <section id=background>
+            <img src="images/x6.png"/>
+        </section>
         <div class="container" style="min-height: 70%;display: block">
             <div class="row">
                 @if (session('errors'))
@@ -9,7 +12,7 @@
                 @endif
                 <div class="col-xl-12">
                     <h3 style="text-align: center;font-weight: 900;color: black">
-                        <strong class="vote">TEAM BUILDING HÒA BÌNH - TNR 2020</strong>
+                        <strong class="vote">X6 TINH ANH HỘI TỤ - HỢP SỨC PHÁ BĂNG</strong>
                     </h3>
                 </div>
                 <div class="col-xl-12" style="text-align: center">
