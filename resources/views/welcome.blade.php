@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
         <section id=background>
-            <img src="{{{assets('images/x6.png')}}"/>
+            <img src="{{assets('images/x6.png')}}"/>
         </section>
         <div class="container" style="min-height: 70%;display: block">
             <div class="row">
