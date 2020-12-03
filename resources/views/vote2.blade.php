@@ -31,11 +31,11 @@
         </div>
     </div>
     <script>
-        var name = $.cookie('name');
+        var code = $.cookie('code');
         var url = "{{route('teams')}}";
         var token = "{{csrf_token()}}";
         $('.chia-team').on('click',function(){
-            $.post(url,{'name':name,'_token':token},function(data){
+            $.post(url,{'code':code,'_token':token},function(data){
                 $('.team').html(data);
             })
         });
